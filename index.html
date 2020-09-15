@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="icon" href="img/inventory-icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div><img src="img/box.png" alt="">
+            <a href="index.html" class="navbar-brand">
+                Inventory
+            </a></div>
+    </nav>
+
+    <div class="container">
+        <div id="app" class="row pt-5">
+            <div class="col-4">
+                <div class="card border border-dark">
+                    <div class="card-header">
+                        <h3 class="text-center">Add a product</h3>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input class="form-control" id="name" placeholder="Product name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="price" placeholder="Product price" step="0.01"
+                                type="number">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="year" min="1900" placeholder="Product Year" type="number">
+                        </div>
+                        <input class="btn btn-primary btn-block" type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col-8">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
